@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lamp cinema</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -32,54 +32,83 @@
         </nav>
     </header>
 
-    <div class="slaider">
-        <div class="slaider__contentLeft">
-            <div class="slaider__textBig">
+    <div class="slider">
+        <div class="slider__content-left">
+            <div class="slider__text">
                 <h1>World of cinema</h1>
             </div>
-            <div class="slaider__textSmall">
+            <div class="slider__text slider__text_small">
                 <h3>On our site you will find all the films you want</h3>
             </div>
         </div>
-        <div class="slaider__contentRight">
+        <div class="slider__content-right">
 
-            <div class="slaider__frame">
+            <div class="slider__frame">
                 <img src="img/frame.jpg" alt="" height="150" width="150">
             </div>
         </div>
     </div>
 
-    <div class="search">
-        <input class="search__input" type="text" name="text">
-        <input class="search__imageLupa" type="image" src="/img/lupa.svg" width="50" height="50">
-    </div>
-
-    <div class="filters">
-
-    </div>
-
-    <div class="films">
-        <div class="films__card">
-            <img src="" alt="">
+    <div class="container">
+        <div class="search">
+            <input class="search__input" type="text" name="text">
+            <input class="search__imageLupa" type="image" src="/img/lupa.svg" width="50" height="50">
         </div>
-        <div class="films__card">
-            <img src="" alt="">
+
+        <div class="container__content">
+            <div class="container__content-left-right">
+            <div class="filters">
+фильтры
+            </div>
+                <div class="films">
+                    <div class="films__card">
+                        <img src="" alt="">
+                    </div>
+                    <div class="films__card">
+                        <img src="" alt="">
+                    </div>
+                    <div class="films__card">
+                        <img src="" alt="">
+                    </div>
+                    <div class="films__card">
+                        <img src="" alt="">
+                    </div>
+                    <div class="films__card">
+                        <img src="" alt="">
+                    </div>
+                    <div class="films__card">
+                        <div class="films__label">new</div>   
+                        <img src="img/film-selfi.jpg" alt="">
+                        <div class="films__info">
+                            <span>Селфи</span>
+                            <span>2018, Драма</span>
+                        </div>
+                    </div>
+                    <div class="films__card">
+                        <img src="" alt="">
+                    </div>
+                    <div class="films__card">
+                        <img src="" alt="">
+                    </div>
+                    <div class="films__card">
+                        <img src="" alt="">
+                    </div>
+                </div>
+
+                <div class="filterFilm">
+фильтры
+                </div>
+
+            </div>
+
         </div>
-        <div class="films__card">
-            <img src="" alt="">
+        <div class="pagination">
+пегинейшн
         </div>
     </div>
-
-    <div class="filterFilm">
-
     </div>
-
-    <div class="pagination">
-
-    </div>
-
     <div class="footer">
-
+футер
     </div>
 </body>
 

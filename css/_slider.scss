@@ -1,0 +1,46 @@
+.slider {
+    background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+    height: 498px;
+    left: 0px;
+    top: 114px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .slider__content-left {
+    position: relative;
+    width: 70%;
+    height: 490px;
+  }
+  
+  .slider__content-right {
+    position: relative;
+    width: 30%;
+    height: 490px;
+  }
+  
+  .slider__text {
+    position: relative;
+    width: 1110px;
+    height: 198px;
+    top: 70px;
+    font-family: Proxima Nova;
+    font-size: 45px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+  .slider__text_small {
+    height: 69px;
+    top: 10px;
+    font-size: 30px;
+    }
+
+
+  
+  .slider__frame {
+    position: relative;
+    width: 461px;
+    height: 299px;
+    top: 170px;
+  }

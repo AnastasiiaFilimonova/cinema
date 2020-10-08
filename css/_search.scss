@@ -1,0 +1,23 @@
+.search {
+    position: relative;
+    height: 78px;
+    background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+    border-radius: 15px;
+    margin-top: 85px;
+    padding-left: 30px;
+    padding-right: 100px;
+  }
+  
+  .search__input {
+    background-color: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+    margin-top: 15px; 
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .search__imageLupa {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
