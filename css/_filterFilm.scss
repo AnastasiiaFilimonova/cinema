@@ -2,9 +2,17 @@
 
 .filterFilm {
   width: 250px;
-  height: 822px;
+  height-max: 100%;
   border: 1px solid orange;
   margin-left: 15px;
   font-family: Proxima Nova;
-  font-size: 45px;
+  font-size: 25px;
+  line-height: 105%;
+}
+
+.filterFilm__item {
+  color: #5C5C5C;
+  display: flex;
+  list-style-type: none;
+  padding: 15px;
 }

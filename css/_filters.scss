@@ -5,5 +5,38 @@
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: Proxima Nova;
-  font-size: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   }
+
+.filters__total {
+    font-size: 15px;
+    padding-right: 15px;
+  }
+.filters__sort select{
+  font-size: 15px;
+  background: #FFFFFF;
+  border: 1px solid #5C5C5C;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+
+.filters__display-card {
+  display: flex;
+  flex-direction: row;
+}
+.filters__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.filters__grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 15px;
+}
