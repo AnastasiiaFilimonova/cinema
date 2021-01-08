@@ -1,0 +1,35 @@
+
+  .movie {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    overflow: hidden;
+  }
+
+  .movie img {
+    max-width: 100%;
+  }
+
+  .movie__label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .movie__info {
+    position: absolute;
+    bottom: 0;
+    background-color: orange;
+    color: white;
+    padding: 15px;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }

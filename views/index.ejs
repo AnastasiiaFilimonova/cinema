@@ -1,0 +1,110 @@
+<%- include("sections/header") %>
+
+
+<div class="slider">
+    <div class="slider__content-left">
+        <div class="slider__text">
+            <h1>World of cinema</h1>
+        </div>
+        <div class="slider__text slider__text_small">
+            <h3>On our site you will find all the films you want</h3>
+        </div>
+    </div>
+    <div class="slider__content-right">
+
+        <div class="slider__frame">
+            <img src="img/frame.jpg" alt="" height="150" width="150">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="search">
+        <input class="search__input" type="text" name="text">
+        <input class="search__imageLupa" type="image" src="/img/lupa.svg" width="50" height="50">
+    </div>
+
+    <div class="container__content">
+        <div class="container__content-left-right">
+            <div class="filters">
+
+                <div class="filters__total">
+                    Show 
+                    <span>All: <a href="">100</a></span>
+                    <span>New: <a href="">30</a></span>
+                    <span>Free: <a href="">30</a></span>
+                    <span>Best: <a href="">30</a></span>
+                </div>
+
+                <div class="filters__display-card">
+
+                    <span class="filters__list">
+                        <span>list</span>
+                    <input type="image" src="/img/list.png" alt="">
+                    </span>
+
+                    <span class="filters__list">
+                        <span>grid</span>
+                        <input type="image" src="img/grid.png" alt="">
+                    </span>
+
+                </div>
+
+                <div class="filters__sort">
+                    <span>Sort: </span>
+                    <select name="sort" id="">
+                        <option value="notSort">not sort</option>
+                        <option value="releaseDateDescending">release date descending</option>
+                        <option value="releaseDateAscending">release date ascending</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="films">
+                <% for(let movie of movies) { %>
+                    <div class="films__item movie">
+                      <div class="movie__label"><%= movie.label %></div>
+                      <a href="/film/<%= movie.title.toLowerCase() %>">
+                        <img src="<%= movie.img %>" alt="">
+                      </a>
+                      <div class="movie__info">
+                          <span><%= movie.title %></span>
+                          <span><%= movie.year %>, <%= movie.genres.join(', ') %></span>
+                      </div>
+                    </div>
+                <% } %>
+            </div>
+
+            <div class="filterFilm">
+                
+                <ul>
+                    <li class="filterFilm__item"><a href="">All films</a></li>
+                    <li class="filterFilm__item"><a href="">Comedy</a></li>
+                    <li class="filterFilm__item"><a href="">Triller</a></li>
+                    <li class="filterFilm__item"><a href="">Drama</a></li>
+                    <li class="filterFilm__item"><a href="">Fantasy</a></li>
+                    <li class="filterFilm__item"><a href="">Action</a></li>
+                    <li class="filterFilm__item"><a href="">Family</a></li>
+                    <li class="filterFilm__item"><a href="">Horror</a></li>
+                    <li class="filterFilm__item"><a href="">Detective</a></li>
+                    <li class="filterFilm__item"><a href="">History</a></li>
+                    <li class="filterFilm__item"><a href="">Crime</a></li>
+                    <li class="filterFilm__item"><a href="">Adventure</a></li>
+                    <li class="filterFilm__item"><a href="">Documentary</a></li>
+                </ul>
+                
+            </div>
+
+        </div>
+
+    </div>
+    <div class="pagination">
+        <span class="pagination__number">1</span>
+        <span class="pagination__number">2</span>
+        <span class="pagination__number">3</span>
+        <span class="pagination__number">...</span>
+        <span class="pagination__number">10</span>
+    </div>
+</div>
+</div>
+<%- include("sections/footer") %>

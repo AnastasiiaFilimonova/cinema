@@ -1,0 +1,25 @@
+<%- include("sections/header") %>
+
+<div class="container">
+  <div class="container__content">
+
+    <div class="movie">
+      <div class="movie__label"><%= movie.label %></div>
+      <a href="/film">
+        <img src="<%= movie.img %>" alt="">
+      </a>
+      <div class="movie__info">
+          <span><%= movie.title %></span>
+          <span><%= movie.year %>, <%= movie.genres.join(', ') %></span>
+      </div>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum reiciendis ex quas in fuga! Deserunt, accusantium, modi dicta et natus tempora impedit nesciunt quia hic quisquam quo facilis sapiente asperiores.
+    </p>
+
+  </div>
+
+</div>
+
+<%- include("sections/footer") %>
