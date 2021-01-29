@@ -1,13 +1,16 @@
 const express = require('express')
-require("dotenv").config()
+const path = require('path')
+require("dotenv").config({
+    path: path.join(__dirname, '../.env')
+})
 require("./models/db")
 const Movie=require("./models/Movie")
 const { movies } = require("./movies");
 const app = express()
-const port = 3000
+const port = 3001
 
 app.set("view engine", "ejs");
-
+app.set('views', path.join(__dirname, './views'))
 app.get('/hello', async (req, res) => {
     const items=await Movie.find()
     res.send(items)
