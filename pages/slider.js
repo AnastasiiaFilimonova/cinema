@@ -1,5 +1,6 @@
 import {useState} from "react"
 import Slider from "../components/social/Slider"
+import Menu from "../components/Menu"
 
 
 const SliderPage = () => {
@@ -10,6 +11,7 @@ const SliderPage = () => {
     ]
     return (
         <div>
+            <Menu />
             <Slider images={images} />
         </div>
     )

@@ -19,6 +19,21 @@ const Menu = ()=>{
                   <a>Кино</a>
                 </Link>
               </li>
+              <li>
+                <Link href="/slider">
+                  <a>Слайдер</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/counter">
+                  <a>Counter</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/filmsmark">
+                  <a>Мои фильмы</a>
+                </Link>
+              </li>
             </ul>)
           }
         </div>

@@ -1,0 +1,11 @@
+.book-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.book-card img {
+    max-width: 100%;
+}
+.books {
+    display: flex;
+}
